@@ -1,0 +1,33 @@
+.wrapper {
+  div[class*="ant-form-item-label"] {
+    padding-bottom: 0 !important;
+  }
+}
+
+.button {
+  font-size: 18px !important;
+  height: auto !important;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 1200px) {
+  .button {
+    font-size: 17px !important;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .button {
+    font-size: 16px !important;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 15px !important;
+    margin-top: 10px;
+  }
+}

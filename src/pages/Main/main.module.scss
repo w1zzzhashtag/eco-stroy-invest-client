@@ -1,0 +1,236 @@
+@import "src/common/variables";
+
+.link {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.previewSection {
+  width: 100%;
+  height: calc(100vh - #{$height-feedback-bar});
+  background: url('../../assets/images/mainPageBackground.jpg') center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0 0;
+
+  &__button {
+    font-size: 18px !important;
+    height: auto !important;
+    padding: .5em 2.5em !important;
+    margin-bottom: 30px !important;
+  }
+
+  &__list {
+    width: 400px;
+  }
+}
+
+.worksSection {
+  padding: $padding-section;
+  background-color: $secondary-section-color;
+}
+
+.servicesSection {
+  padding: $padding-section;
+}
+
+.designDecisionsSection {
+  padding: $padding-section;
+  background-color: $secondary-section-color;
+
+  &__slider {
+    width: 100%;
+    height: 500px;
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 0 65px;
+    }
+  }
+}
+
+.howMatchSection {
+  padding: $padding-section;
+
+  &__button {
+    font-size: 18px !important;
+    height: auto !important;
+    width: 100%;
+
+    &_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: -40px;
+    }
+  }
+}
+
+.renovationProcessSection {
+  padding: $padding-section;
+}
+
+@media (max-width: 1200px) {
+  .link {
+    font-size: 1.4em;
+  }
+
+  .previewSection {
+    height: calc(100vh - #{$height-feedback-bar-1200});
+    padding: 90px 0 0;
+
+
+    &__button {
+      font-size: 17px !important;
+      margin-bottom: 25px !important;
+    }
+
+    &__list {
+      width: 360px;
+    }
+  }
+
+  .worksSection {
+    padding: $padding-section-1200;
+  }
+  .servicesSection {
+    padding: $padding-section-1200;
+  }
+  .designDecisionsSection {
+    padding: $padding-section-1200;
+
+    &__slider {
+      height: 450px;
+
+      &__image {
+        padding: 0 55px;
+      }
+    }
+  }
+
+  .howMatchSection {
+    padding: $padding-section-1200;
+
+    &__button {
+      font-size: 17px !important;
+
+      &_wrapper {
+        margin-top: -30px;
+      }
+    }
+  }
+
+  .renovationProcessSection {
+    padding: $padding-section-1200;
+  }
+}
+
+@media (max-width: 900px) {
+  .link {
+    font-size: 1.3em;
+  }
+
+  .previewSection {
+    height: calc(100vh - #{$height-feedback-bar-900});
+    padding: 80px 0 0;
+
+    &__button {
+      font-size: 16px !important;
+      margin-bottom: 20px !important;
+    }
+
+    &__list {
+      width: 340px;
+    }
+  }
+
+  .worksSection {
+    padding: $padding-section-900;
+  }
+  .servicesSection {
+    padding: $padding-section-900;
+  }
+  .designDecisionsSection {
+    padding: $padding-section-900;
+
+    &__slider {
+      height: 360px;
+
+      &__image {
+        padding: 0 50px;
+      }
+    }
+  }
+
+  .howMatchSection {
+    padding: $padding-section-900;
+
+    &__button {
+      font-size: 16px !important;
+
+      &_wrapper {
+        margin-top: -20px;
+      }
+    }
+  }
+
+  .renovationProcessSection {
+    padding: $padding-section-900;
+  }
+}
+
+@media (max-width: 600px) {
+  .link {
+    font-size: 1.15em;
+  }
+
+  .previewSection {
+    padding: 50px 0 0;
+
+    &__button {
+      font-size: 15px !important;
+      margin-bottom: 15px !important;
+    }
+
+    &__list {
+      width: 300px;
+    }
+  }
+
+  .worksSection {
+    padding: $padding-section-600;
+  }
+  .servicesSection {
+    padding: $padding-section-600;
+  }
+  .designDecisionsSection {
+    padding: $padding-section-600;
+
+    &__slider {
+      height: 250px;
+
+      &__image {
+        padding: 0;
+      }
+    }
+  }
+
+  .howMatchSection {
+    padding: $padding-section-600;
+
+    &__button {
+      font-size: 15px !important;
+
+      &_wrapper {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .renovationProcessSection {
+    padding: $padding-section-600;
+  }
+}

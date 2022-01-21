@@ -1,0 +1,41 @@
+.button {
+  font-size: 18px !important;
+  position: absolute !important;
+  right: 1em;
+  top: 1em;
+  width: 3em !important;
+  height: 3em !important;
+  padding: 0 !important;
+  svg {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .button {
+    width: 2.5em !important;
+    height: 2.5em !important;
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 900px) {
+  .button {
+    right: .75em;
+    top: .75em;
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 600px) {
+  .button {
+    font-size: 14px !important;
+    width: 2em !important;
+    height: 2em !important;
+    right: .5em;
+    top: .5em;
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+}

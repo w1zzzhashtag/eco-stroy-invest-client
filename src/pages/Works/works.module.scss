@@ -1,0 +1,23 @@
+@import "src/common/variables";
+
+.wrapper {
+  padding: $padding-section;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: $padding-section-1200;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: $padding-section-900;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: $padding-section-600;
+  }
+}

@@ -1,0 +1,82 @@
+@import "src/common/variables";
+
+.item {
+  width: calc(100% / 3 - (#{$gap-horizontal-list} * 2) / 3);
+}
+
+.image {
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  font-size: 14px;
+  padding: 1em .6em;
+
+  &__title {
+    font-size: 1.25em;
+    line-height: 1.2;
+    height: 2.5em;
+    font-weight: 500;
+    margin-bottom: .5em;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &__desc {
+    height: 155px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1200px) {
+  .item {
+    width: calc(100% / 3 - (#{$gap-horizontal-list-1200} * 2) / 3);
+  }
+
+  .image {
+    height: 205px;
+  }
+
+  .info {
+    font-size: 13px;
+    &__desc {
+      height: 107px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .item {
+    width: calc(100% / 2 - #{$gap-horizontal-list-900} / 2);
+  }
+
+  .image {
+    height: 220px;
+  }
+
+  .info {
+    font-size: 12px;
+
+    &__title {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+  }
+
+  .info {
+    font-size: 11px;
+
+    &__desc {
+      height: auto;
+    }
+  }
+}

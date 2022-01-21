@@ -1,0 +1,36 @@
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #656565;
+  margin-bottom: 30px;
+}
+
+.item {
+  color: inherit;
+}
+
+.divider {
+  margin: 1em;
+  color: inherit;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 15px;
+  }
+}

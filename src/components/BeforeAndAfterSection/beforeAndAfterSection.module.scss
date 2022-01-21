@@ -1,0 +1,120 @@
+@import "src/common/variables";
+
+.wrapper {
+  background-color: $secondary-section-color;
+  padding: $padding-section;
+}
+
+.slider {
+  &__inner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 65px;
+    gap: 20px;
+
+    &::before, &::after {
+      position: absolute;
+      top: 25px;
+      background-color: rgba(#fff, .8);
+      padding: .25em .75em;
+      border-radius: .1em;
+    }
+
+    &::before {
+      content: 'До';
+      left: 100px;
+    }
+
+    &::after {
+      content: 'После';
+      right: 100px;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: $padding-section-1200;
+  }
+
+  .slider {
+    &__inner {
+      height: 450px;
+      padding: 0 70px 0 55px;
+      gap: 18px;
+
+      &::before, &::after {
+        top: 22px;
+      }
+
+      &::before {
+        left: 80px;
+      }
+
+      &::after {
+        right: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: $padding-section-900;
+  }
+
+  .slider {
+    &__inner {
+      height: 340px;
+      padding: 0 65px 0 50px;
+      gap: 16px;
+
+      &::before, &::after {
+        top: 19px;
+      }
+
+      &::before {
+        left: 70px;
+      }
+
+      &::after {
+        right: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: $padding-section-600;
+  }
+
+  .slider {
+    &__inner {
+      height: 250px;
+      padding: 0;
+      gap: 14px;
+
+      &::before, &::after {
+        top: 15px;
+      }
+
+      &::before {
+        left: 20px;
+      }
+
+      &::after {
+        right: 20px;
+      }
+    }
+  }
+}

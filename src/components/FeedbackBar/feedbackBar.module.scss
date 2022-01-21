@@ -1,0 +1,48 @@
+@import "src/common/variables";
+
+.wrapper {
+  width: 100%;
+  height: $height-feedback-bar;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: .5em;
+  line-height: 1.15 !important;
+  box-shadow: -0 0 15px rgba(#000, .2);
+}
+
+.link {
+  padding: 0 !important;
+  margin: 0 4px !important;
+  font-size: 1em !important;
+  line-height: inherit;
+  &.mr0 {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    height: $height-feedback-bar-1200;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    height: $height-feedback-bar-900;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    font-size: 14px;
+  }
+}

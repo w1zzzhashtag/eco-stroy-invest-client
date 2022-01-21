@@ -1,0 +1,29 @@
+@import "src/common/variables";
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px $gap-horizontal-list;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .list {
+    gap: 22px $gap-horizontal-list-1200;
+    margin: 18px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    gap: 19px $gap-horizontal-list-900;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    gap: 16px $gap-horizontal-list-600;
+    margin: 14px 0;
+  }
+}
