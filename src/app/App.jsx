@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 import './app.scss';
 import { ConfigProvider } from 'antd';
+import ruRU from 'antd/lib/locale/ru_RU';
 
 ConfigProvider.config({
     theme: {
@@ -20,7 +21,7 @@ ConfigProvider.config({
 const App = () => {
     const location = useLocation();
     return (
-        <ConfigProvider>
+        <ConfigProvider locale={ruRU}>
             <ScrollTop />
             <Layout>
                 <AnimatePresence exitBeforeEnter>

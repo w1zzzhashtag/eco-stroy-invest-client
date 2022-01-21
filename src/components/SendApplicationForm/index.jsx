@@ -2,10 +2,13 @@ import React from 'react';
 import Title from '../Title';
 import { Button, DatePicker, Form, Input, notification } from 'antd';
 import { PRIVACY_POLICY_URL } from '../../common/constants';
-import classes from './sendApplicationForm.module.scss';
 import moment from 'moment';
+import { Loader } from '../index';
+import { withLoaderContext } from '../../HOCs/withLoaderContext';
+import classes from './sendApplicationForm.module.scss';
 
-const SendApplicationForm = ({ variant }) => {
+
+const SendApplicationForm = ({ variant, setIsLoading }) => {
     const onFinishFailed = () => {
         notification.warn({
             message: 'Внимание',
@@ -36,6 +39,10 @@ const SendApplicationForm = ({ variant }) => {
 
     const onFinish = async (values) => {
         try {
+            setIsLoading((prev) => ({
+                ...prev,
+                isLoading: true,
+            }));
             // eslint-disable-next-line no-undef
             const response = await fetch(`${process.env.REACT_APP_FETCH_URL}/email`, {
                 method: 'POST',
@@ -61,6 +68,11 @@ const SendApplicationForm = ({ variant }) => {
                 message: 'Ошибка',
                 description: err.message || 'Что-то пошло не так',
             });
+        } finally {
+            setIsLoading((prev) => ({
+                ...prev,
+                isLoading: false,
+            }));
         }
     };
 
@@ -85,6 +97,9 @@ const SendApplicationForm = ({ variant }) => {
                 {variant === 'backCall' && (
                     <Form.Item label="Выберите дату и время" name="dateTime">
                         <DatePicker
+                            style={{
+                                width: '100%',
+                            }}
                             format="YYYY-MM-DD HH:mm:ss"
                             showTime={{ defaultValue: moment('00:00:00', 'HH:mm:ss').iso }}
                         />
@@ -101,8 +116,9 @@ const SendApplicationForm = ({ variant }) => {
                 Нажимая на кнопку, вы соглашаетесь с{' '}
                 <a href={PRIVACY_POLICY_URL}>политикой защиты персональной информации</a>.
             </p>
+            <Loader />
         </div>
     );
 };
 
-export default SendApplicationForm;
+export default withLoaderContext(SendApplicationForm);

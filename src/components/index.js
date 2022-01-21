@@ -14,3 +14,4 @@ export { default as SendApplicationSection } from './SendApplicationSection';
 export { default as InfoList } from './InfoList';
 export { default as Socials } from './Socials';
 export { default as ScrollTop } from './ScrollTop';
+export { default as Loader } from './Loader';

@@ -19,13 +19,19 @@
 }
 
 .logo {
-  height: 80%;
-  border-radius: 10px;
-  overflow: hidden;
-
-  &__img {
-    height: 100%;
-  }
+  font-size: 40px;
+  font-weight: 500;
+  //font-family: 'Lobster', cursive;
+  //font-family: 'Dancing Script', cursive;
+  //font-family: 'JetBrains Mono', monospace;
+  font-family: 'Caveat', cursive;
+  //height: 80%;
+  //border-radius: 10px;
+  //overflow: hidden;
+  //
+  //&__img {
+  //  height: 100%;
+  //}
 }
 
 .burger {
