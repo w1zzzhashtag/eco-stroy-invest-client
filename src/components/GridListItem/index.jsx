@@ -12,7 +12,7 @@ const GridListItem = ({ data }) => {
 
     return (
         <div className={classes.item}>
-            <img className={classes.image} onClick={goToDetailsPage} src={data.images[0]} alt="ЭкоСтройИнвест" />
+            <img className={classes.image} onClick={goToDetailsPage} src={data.images[0]} alt="ЭкоСтроИнвест" />
             <div className={classes.info}>
                 <Tooltip title={data.title}>
                     <div className={classes.info__title} onClick={goToDetailsPage}>

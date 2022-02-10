@@ -35,7 +35,7 @@ const WorksDetails = () => {
                     >
                         {foundedItem.images.map((image, i) => (
                             <SwiperSlide key={i}>
-                                <img src={image} alt="ЭкоСтройИнвест" className={classes.swiperTop__image} />
+                                <img src={image} alt="ЭкоСтроИнвест" className={classes.swiperTop__image} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -50,7 +50,7 @@ const WorksDetails = () => {
                     >
                         {foundedItem.images.map((image, i) => (
                             <SwiperSlide key={i}>
-                                <img src={image} alt="ЭкоСтройИнвест" className={classes.swiperBottom__image} />
+                                <img src={image} alt="ЭкоСтроИнвест" className={classes.swiperBottom__image} />
                             </SwiperSlide>
                         ))}
                     </Swiper>

@@ -12,15 +12,15 @@ const BeforeAndAfterSection = () => {
         <section className={classes.wrapper}>
             <Container widthLG={90}>
                 <Title variant="h2">
-                    <b>Квартиры до и после ремонта «ЭкоСройИнвест»</b>
+                    <b>Квартиры до и после ремонта «ЭкоСроИнвест»</b>
                 </Title>
 
                 <Swiper navigation={true}>
                     {BEFORE_AND_AFTER_DATA.map((imagesArr, i) => (
                         <SwiperSlide key={i}>
                             <div className={classes.slider__inner}>
-                                <img src={imagesArr[0]} alt="ЭкоСтройИнвест" className={classes.slider__item} />
-                                <img src={imagesArr[1]} alt="ЭкоСтройИнвест" className={classes.slider__item} />
+                                <img src={imagesArr[0]} alt="ЭкоСтроИнвест" className={classes.slider__item} />
+                                <img src={imagesArr[1]} alt="ЭкоСтроИнвест" className={classes.slider__item} />
                             </div>
                         </SwiperSlide>
                     ))}

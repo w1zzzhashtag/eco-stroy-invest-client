@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 @import '~antd/dist/antd.variable.min.css';
-@import "src/common/variables";
+@import "../assets/css/variables";
+@import "../assets/css/fonts";
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -12,6 +13,7 @@
   &-pagination-bullet-active {
     background-color: rgba(#000, .95) !important;
   }
+
   &-button-next, &-button-prev {
     color: $primary-color !important;
   }

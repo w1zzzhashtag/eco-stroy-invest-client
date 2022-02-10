@@ -1,4 +1,8 @@
-import { Main, Menu, SendApplication, Works, WorksDetails, Services, RenovationProcess } from '../pages';
+import {
+    Main, Menu, SendApplication,
+    // Works,
+    WorksDetails, Services, RenovationProcess
+} from '../pages';
 
 export const BASE_ROUTE = '/';
 export const MENU_ROUTE = '/menu';
@@ -21,12 +25,12 @@ export const ROUTES = [
         exact: true,
         component: Menu,
     },
-    {
-        path: WORKS_ROUTE,
-        component: Works,
-        exact: true,
-        title: 'Наши работы',
-    },
+    // {
+    //     path: WORKS_ROUTE,
+    //     component: Works,
+    //     exact: true,
+    //     title: 'Наши работы',
+    // },
     {
         path: WORKS_DETAILS_ROUTE,
         component: WorksDetails,

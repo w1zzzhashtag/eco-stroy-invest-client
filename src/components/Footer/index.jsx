@@ -43,7 +43,7 @@ const Footer = () => {
             <div className={classes.separator} />
             <div className={classes.content}>
                 <Container width={45} widthLG={70} widthMD={85} widthSM={100}>
-                    <p className={classes.text}>2020–2022 © ЭкоСтройИнвест.</p>
+                    <p className={classes.text}>2020–2022 © ЭкоСтроИнвест.</p>
                     <p className={classes.text}>
                         <a href={PRIVACY_POLICY_URL}>Политика конфиденциальности</a>
                     </p>

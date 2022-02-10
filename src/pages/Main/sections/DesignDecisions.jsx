@@ -27,7 +27,7 @@ const DesignDecisions = () => {
                             <img
                                 className={classes.designDecisionsSection__slider__image}
                                 src={image}
-                                alt="ЭкоСтройИнвест"
+                                alt="ЭкоСтроИнвест"
                             />
                         </SwiperSlide>
                     ))}

@@ -5,7 +5,6 @@ import { MenuOutlined } from '@ant-design/icons';
 import { PHONE_NUMBER_HREF, PHONE_NUMBER_TEXT } from '../../common/constants';
 import { BASE_ROUTE, MENU_ROUTE } from '../../app/routes';
 import { Container } from '../index';
-// import logo from './../../assets/images/logo.jpg';
 import classes from './header.module.scss';
 
 const Header = () => {
@@ -18,8 +17,7 @@ const Header = () => {
             <Container width={85} widthLG={90}>
                 <div className={classes.content}>
                     <Link to={BASE_ROUTE} className={classes.logo}>
-                        ЭкоСтройИнвест
-                        {/*<img src={logo} alt="ЭкоСтройИнвест" className={classes.logo__img} />*/}
+                        ЭкоСтроИнвест
                     </Link>
                     <div className={classes.burger_wrapper}>
                         <a href={PHONE_NUMBER_HREF} className={classes.burger_wrapper__phone}>

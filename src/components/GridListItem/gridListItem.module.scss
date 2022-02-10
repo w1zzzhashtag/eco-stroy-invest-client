@@ -1,4 +1,4 @@
-@import "src/common/variables";
+@import "../../assets/css/variables";
 
 .item {
   width: calc(100% / 3 - (#{$gap-horizontal-list} * 2) / 3);
