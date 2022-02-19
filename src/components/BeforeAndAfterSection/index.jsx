@@ -12,7 +12,7 @@ const BeforeAndAfterSection = () => {
         <section className={classes.wrapper}>
             <Container widthLG={90}>
                 <Title variant="h2">
-                    <b>Квартиры до и после ремонта «ЭкоСроИнвест»</b>
+                    <b>Квартиры до и после ремонта «ЭкоСтроИнвест»</b>
                 </Title>
 
                 <Swiper navigation={true}>

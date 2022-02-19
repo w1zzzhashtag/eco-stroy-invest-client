@@ -1,7 +1,7 @@
 export const PHONE_NUMBER_TEXT = '+7 909 355-55-99';
 export const PHONE_NUMBER_HREF = 'tel:+79093555599';
-export const EMAIL_TEXT = 'support@ecostroinvest.ru';
-export const EMAIL_HREF = 'mailto:support@ecostroinvest.ru';
+export const EMAIL_TEXT = 'info@ecostroinvest.ru';
+export const EMAIL_HREF = 'mailto:info@ecostroinvest.ru';
 // TODO:
 export const ADDRESS_TEXT = '';
 export const ADDRESS_URL = '#';
